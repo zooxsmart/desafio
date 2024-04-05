@@ -32,50 +32,15 @@ Nesse projeto, você terá que implementar uma busca de dados demográficos de c
 ### Rodando a aplicação
 
 Entendemos que para essa vaga seja importante um pouco de conhecimento de como rodar aplicações.
-Para conseguir fazer as rodar a API, disponibilizamos o seguinte docker-compose rodar a API, já configurado com os endpoints e dados.
+Para conseguir fazer as rodar a API, disponibilizamos 2 imagens docker para rodar a API, já configurado com os endpoints e dados.
 
-```yaml
-version: "3.9"
+```sh
+docker run --network host zooxsmart/postgres-desafio:1.0
+```
 
-services:
-  api:
-    container_name: api
-    hostname: api
-    build: zooxsmart/desafio-api:latest
-    ports:
-      - 3333:3333
-    networks:
-      - api-network
-    depends_on:
-      db:
-        condition: service_healthy
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
-
-  db:
-    container_name: db
-    hostname: db
-    image: zooxsmart/postgres-desafio:latest
-    restart: always
-    ports:
-      - "5432:5432"
-    networks:
-      - api-network
-    volumes:
-      - api-data:/var/lib/postgresql/data
-    healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U api"]
-      interval: 1s
-      timeout: 1s
-      retries: 15
-
-networks:
-  api-network:
-    driver: bridge
-
-volumes:
-  api-data:
-``` 
+```sh
+docker run --network host zooxsmart/api-desafio:1.0
+```
 
 ### Endpoints para serem utilizados no projeto:
 
