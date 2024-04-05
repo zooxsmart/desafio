@@ -35,7 +35,7 @@ Entendemos que para essa vaga seja importante um pouco de conhecimento de como r
 Para conseguir fazer as rodar a API, disponibilizamos 2 imagens docker para rodar a API, já configurado com os endpoints e dados.
 
 ```sh
-docker run -e PGDATA=/data -e POSTGRES_PASSWORD=password -e POSTGRES_USER=api --network host zooxsmart/postgres-desafio:1.5
+docker run -d -e PGDATA=/data -e POSTGRES_PASSWORD=password -e POSTGRES_USER=api --network host zooxsmart/postgres-desafio:1.5
 ```
 
 ```sh
