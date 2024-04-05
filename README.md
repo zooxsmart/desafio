@@ -62,7 +62,7 @@ curl --location 'http://localhost:3333/geo/:state_id/:city_id/polygons'
 
 #### Busca dos dados demográficos
 
-```
+```sh
 curl --location 'http://localhost:3333/geo/:state_id/:city_id/demographic'
 # curl --location 'http://localhost:3333/geo/33/3304557/demographic'
 ```
