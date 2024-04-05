@@ -83,18 +83,21 @@ Para o desafio, disponibilizamos dados referentes às cidades dos estados de SP 
 
 #### Busca dos CEPs
 
-```
-curl --location 'http://localhost:3333/geo?search=0000'
+```sh
+curl --location 'http://localhost:3333/geo?search=20220410'
 ```
 
 #### Busca dos polígonos para o mapa
 
+```sh
+curl --location 'http://localhost:3333/geo/:state_id/:city_id/polygons'
+# curl --location 'http://localhost:3333/geo/33/3304557/polygons'
 ```
-curl --location 'http://localhost:3333/geo/:state_id/:city_id/demographic'
-```
+
 
 #### Busca dos dados demográficos
 
 ```
 curl --location 'http://localhost:3333/geo/:state_id/:city_id/demographic'
+# curl --location 'http://localhost:3333/geo/33/3304557/demographic'
 ```
