@@ -28,8 +28,8 @@ Nesse projeto, você terá que fazer um modificador de CSV simplificado, **apena
 ## Fluxo de uso
 - Usuário vai importar um arquivo CSV válido;
 - Após a importação feita, as linhas e colunas do CSV devem ser exibidas em formato de tabela;
-- Usuário seleciona quais colunas ele quer visualizar/incluir através do botão "Colunas";
-- Usuário seleciona quais linhas quer selecionar através do checkbox da primeira coluna;
+- Usuário seleciona quais colunas ele quer visualizar/incluir através do botão "Colunas". (Devem ser exibidas/exportadas somente as colunas selecionadas);
+- Usuário seleciona quais linhas quer selecionar através do checkbox da primeira coluna. (Devem ser exportadas somente as linhas selecionadas, sem alteração na tabela);
 - Usuário clica em exportar tabela. A exportação faz download do arquivo CSV para máquina do usuário;
 - Para cada exportação é salvo um log, que é exibido na tabela da página inicial.
 
