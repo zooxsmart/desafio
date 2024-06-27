@@ -21,7 +21,7 @@ Nesse projeto, você terá que fazer um modificador de CSV simplificado, **apena
 
 **Caso de uso:** Como usuário, gostaria de importar um csv e exportar somente algumas linhas e colunas do CSV.
 
-**Caso de uso(2):** Como usuário, gostaria de ver o histórico dos meus csv's importados.
+**Caso de uso(2):** Como usuário, gostaria de ver o histórico dos meus csv's exportados.
 
 **Layout:** Usar o protótipo - [Link Figma](https://www.figma.com/proto/Hyh57kBO3Kn6iuJ8uXoM0L/Teste-Front-v2?page-id=0%3A1&type=design&node-id=1-5825&viewport=916%2C607%2C0.5&t=iiU3l8VOo8UymPro-1&scaling=scale-down&starting-point-node-id=1%3A5825&show-proto-sidebar=1&mode=design).
 
